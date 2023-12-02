@@ -2,7 +2,7 @@ package day1
 
 import (
 	"bytes"
-	"io/ioutil"
+	"os"
 	"regexp"
 	"strconv"
 	"strings"
@@ -22,7 +22,7 @@ func checkNumber(char string) bool {
 // of Code challenge 2023.
 func Part1() int {
 	defer timer.Timer("Day 1, Part 1")()
-	input, err := ioutil.ReadFile("day1/input.txt")
+	input, err := os.ReadFile("day1/input.txt")
 	if err != nil {
 		panic(err)
 	}
@@ -58,7 +58,7 @@ func Part1() int {
 // of Code challenge 2023.
 func Part2() int {
 	defer timer.Timer("Day 1, Part 2")()
-	input, err := ioutil.ReadFile("day1/input.txt")
+	input, err := os.ReadFile("day1/input.txt")
 	if err != nil {
 		panic(err)
 	}
