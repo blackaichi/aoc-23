@@ -16,7 +16,7 @@ func splitCardsAndWinNum(line string) ([]string, []string) {
 	return winNum, numHand
 }
 
-// Part1 returns the answer to Day 2, Part 1 of the Advent
+// Part1 returns the answer to Day 4, Part 1 of the Advent
 // of Code challenge 2023.
 func Part1() int {
 	defer timer.Timer("Day 4, Part 1")()
@@ -47,7 +47,7 @@ func Part1() int {
 	return sum
 }
 
-// Part2 returns the answer to Day 2, Part 2 of the Advent
+// Part2 returns the answer to Day 4, Part 2 of the Advent
 // of Code challenge 2023.
 func Part2() int {
 	defer timer.Timer("Day 4, Part 2")()
