@@ -20,9 +20,9 @@ func checkNumber(char string) bool {
 
 // Part1 returns the answer to Day 1, Part 1 of the Advent
 // of Code challenge 2023.
-func Part1() int {
+func Part1(filePath string) int {
 	defer timer.Timer("Day 1, Part 1")()
-	input, err := os.ReadFile("day1/input.txt")
+	input, err := os.ReadFile(filePath)
 	if err != nil {
 		panic(err)
 	}
@@ -56,9 +56,9 @@ func Part1() int {
 
 // Part2 returns the answer to Day 1, Part 2 of the Advent
 // of Code challenge 2023.
-func Part2() int {
+func Part2(filePath string) int {
 	defer timer.Timer("Day 1, Part 2")()
-	input, err := os.ReadFile("day1/input.txt")
+	input, err := os.ReadFile(filePath)
 	if err != nil {
 		panic(err)
 	}
